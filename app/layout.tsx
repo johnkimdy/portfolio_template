@@ -51,7 +51,16 @@ const inter = Inter({
 });
 
 const calSans = LocalFont({
-  src: "../public/fonts/CalSans-SemiBold.ttf",
+  // src: "../public/fonts/CalSans-SemiBold.ttf",
+  // src: "../public/fonts/Kefago-nROlJ.ttf",
+  // src: "../public/fonts/HenjudemoBold-0W15z.otf",
+  // src: "../public/fonts/Meloristdemo-mL35P.ttf",
+  // src: "../public/fonts/Monerd-Solid.ttf",
+  // src: "../public/fonts/NeuePowerTrial-Medium.ttf",
+  // src: "../public/fonts/Stanger-Bf65af408ace994.otf",
+  // src: "../public/fonts/PyeongChangPeace-Bold.ttf",
+  src: "../public/fonts/NanumSquareNeo-bRg.ttf",
+
   variable: "--font-calsans",
 });
 
