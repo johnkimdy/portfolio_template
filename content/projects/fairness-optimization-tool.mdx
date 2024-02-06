@@ -1,0 +1,36 @@
+---
+title: Fairness Optimization Tool
+description: No more discriminating algorithms
+
+date: 2024-02-06
+published: true
+---
+
+# Introduction
+
+AI and Machine learning models may produce potentially biased/unfair results across protected groups, such as race, gender, or age.
+
+Fairness Optimization tool is an AI algorithm that can be incorporated with existing PayPal model development process so that model outcome can be both accurate and fair.
+
+# Methodology
+
+![](/fairness_optimization_process.png)
+
+We usually observe that the model performance drops while we bring up the model fairness, thus creating a trade-off.
+
+This phenomenon depends on the model and data, as we have witnessed a few models that do not sacrifice model performance significantly while increasing model fairness.
+
+# Benefits
+
+- Tested our tool on 10 different existing PayPal credit models, including credit underwriting and credit fraud detection models. For some of the tested models, we have increased model fairness from 86% to 99%+, while sacrificing \<2 KS score from 54 to 52 (model performance).
+- Ability to pick out certain variables in the original model that contribute to biased decisions.
+- With the tool in the model development pipeline, Legal & Compliance variable review timeline can be reduced by 84% (~5 months), model outcome review reduced by 50% (90 days), and customer impact assessment timeline reduced by 50% (45 days)
+
+## Patent Filing
+
+- Patent filing (OCP.D2023.104930.US1). Expected to be available publicly in ‘patents.google.com’ around July 2025.
+
+## Limitations and Challenges:
+
+- Wrote the code from scratch from Scikit-learn fairness optimization method (original modeling methodology refenced in this paper: [Fair Adversarial Gradient Tree Boosting](https://arxiv.org/pdf/1911.05369.pdf)) to LightGBM model that is used widely in the company by contacting LightGBM devs directly.
+- Expanded the capability to debias model outcome on multiple protected groups simultaneously (race, gender, and age), instead of gender only, for example.

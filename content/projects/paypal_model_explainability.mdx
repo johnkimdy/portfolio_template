@@ -1,0 +1,26 @@
+---
+title: PayPal Model Explainability Research
+description: What are the AIs thinking?
+
+date: 2024-02-06
+published: true
+---
+
+At PayPal, our team is tasked with seemlessly incorporating Responsible AI principles and practices into the company model development culture.
+One of the key component in Responsible AI is the Transparency and Explainability of AIs.
+
+Think of why your credit card was declined when you were innocently purchasing a hotdog at the Knicks game, for example.
+Credit Card declines are usually automated with AI today. **What led the AI to make such decision?**
+Was it my FICO score? Did I not pay the bills on time? No, it can't be those.... I made sure to have a good credit score and paid off all my bills.
+Then what could it be?
+
+As PayPal customer, I want to know these reasons, especially when automated decisions by PayPal is seemingly unreasonable.
+By providing why such actions were made by our automated models, or **adverse action codes** in other words, customers are left less baffled than before.
+
+We achieve this by using [SHAP (Shapley Values)](https://shap.readthedocs.io/en/latest/) to obtain feature importance of customer fraud detection models.
+SHAP is an industry standard methodology for extracting feature importance of predictive models.
+With SHAP, we are now able to assess blackbox models' (neural network) feature importance.
+
+### Assessment
+
+We compare existing feature importance method to SHAP on the top 10 important feature by applications.

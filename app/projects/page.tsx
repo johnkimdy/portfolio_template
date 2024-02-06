@@ -20,9 +20,9 @@ export default async function ProjectsPage() {
     return acc;
   }, {} as Record<string, number>);
 
-  const featured = allProjects.find((project) => project.slug === "unkey")!;
-  const top2 = allProjects.find((project) => project.slug === "planetfall")!;
-  const top3 = allProjects.find((project) => project.slug === "highstorm")!;
+  const featured = allProjects.find((project) => project.slug === "fairness-optimization-tool")!;
+  const top2 = allProjects.find((project) => project.slug === "Paypal_model_validations_challengers")!;
+  const top3 = allProjects.find((project) => project.slug === "paypal_model_explainability")!;
   const sorted = allProjects
     .filter((p) => p.published)
     .filter(

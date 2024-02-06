@@ -1,0 +1,38 @@
+---
+title: PayPal Model Validations & Challenger Models
+description: What I do daily at work
+
+date: 2024-02-06
+published: true
+---
+
+For my work at PayPal, as a Second Line of Defense, our usual task is to validate models built by the ML modelers in the First Line of Defense. I have listed the models I have validated and have improved as follows:
+
+# Validation Areas
+
+## Credit
+
+- Business Loan Underwriting Model
+- Business Loan Fraud Application Detection Model
+- Buy Now Pay Later Underwriting Model
+
+## Fraud
+
+- Onboarding Fraud Detection Model
+
+## Customer Complaints
+
+- Complaints Identification Model
+- Complaints Categorization Models
+
+# Challenger Models
+
+- Sometimes I take a long, hard look at the models that the First Line modelers have built and have a "Aha!" moment. Then I build a challenger model that can perform better.
+- I currently specialize in validating and creating challenger models for PayPal Credit.
+- Most common issue with the existing models I have observed so far are the quality of the model inputs, especially the lack of useful features.
+
+  - Examples of new features I introduced:
+    - Consumer-related data for business loans, and business-related data for consumer credit to improve credit risk assessment.
+    - Use of alternative data, such as TELCO, macroeconomic variables, etc..
+
+- Improvement in validation KS score from 34 to 45 for one of the challenger models.
