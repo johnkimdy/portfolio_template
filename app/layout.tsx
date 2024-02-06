@@ -11,14 +11,14 @@ export const metadata: Metadata = {
   },
   description: "Data Scientist at the moment",
   openGraph: {
-    title: "chronark.com",
+    title: "johnkim.vercel.app",
     description:
       "Data Scientist at the moment",
     url: "https://johnkim.vercel.app",
     siteName: "johnkim.vercel.app",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "../public/johnkimwebsitelogo.png",
         width: 1920,
         height: 1080,
       },
